@@ -1,0 +1,30 @@
+@use "./../../../../public/colors.scss";
+
+#d-pad-container{
+  $d-pad-size: 50px;
+  $padding: 2px;
+  position: relative;
+  border: 1px solid colors.$accent-1-contrast;
+  width: $d-pad-size;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: $padding;
+  >div{
+    $cross-with: 10px;
+    position: absolute;
+    width: $cross-with;
+    background-color: colors.$primary;
+    height: $d-pad-size;
+    left: calc(($d-pad-size / 2) - ($cross-with/2) + $padding);
+    &:last-child{
+      rotate: 90deg;
+    }
+  }
+}
+
+.round-button{
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-color: colors.$accent-2;
+  width: 30px;
+}
