@@ -1,10 +1,17 @@
 @use "./../../../../public/colors.scss";
 
+#container{
+  pointer-events: none;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+
 #d-pad-container{
   $d-pad-size: 50px;
   $padding: 2px;
   position: relative;
-  border: 1px solid colors.$accent-1-contrast;
+  border: 1.5px solid colors.$accent-1-contrast;
   width: $d-pad-size;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -22,9 +29,65 @@
   }
 }
 
+#x-o-container{
+  translate: 0 20px;
+}
+
+#x-o-border-container{
+  border: 1.5px solid colors.$accent-1-contrast;
+  border-radius: 2rem;
+  padding: 5px;
+  rotate: -45deg;
+  width: 110px;
+}
+
 .round-button{
   border-radius: 50%;
   aspect-ratio: 1;
   background-color: colors.$accent-2;
   width: 30px;
+  display: flex;
+  justify-content: center;
+  span{
+    translate: 0 40px;
+  }
+}
+
+#buttons-start-container{
+  margin: auto;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  div{
+    translate: 0 40px;
+    margin: 0;
+  }
+}
+
+.large-button{
+  width: 80px;
+  height: 10px;
+  margin: 10px;
+  rotate: -35deg;
+  border-radius: 2rem;
+  border: 2.5px solid colors.$primary;
+  display: flex;
+  justify-content: center;
+  span{
+    translate: 0 20px;
+    font-size: smaller;
+    font-weight: bold;
+  }
+}
+
+#parlant-container{
+  width: 50px;
+  rotate: 45deg;
+  margin-left: auto;
+  div{
+    aspect-ratio: 9;
+    margin: 8px;
+    border-radius: 2rem;
+    border: 1.5px solid colors.$primary;
+  }
 }
