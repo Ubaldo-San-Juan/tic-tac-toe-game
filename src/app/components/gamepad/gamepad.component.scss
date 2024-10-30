@@ -8,7 +8,7 @@
 
 
 #d-pad-container{
-  $d-pad-size: 50px;
+  $d-pad-size: 100px;
   $padding: 2px;
   position: relative;
   border: 1.5px solid colors.$accent-1-contrast;
@@ -17,7 +17,7 @@
   border-radius: 50%;
   padding: $padding;
   >div{
-    $cross-with: 10px;
+    $cross-with: 15px;
     position: absolute;
     width: $cross-with;
     background-color: colors.$primary;
