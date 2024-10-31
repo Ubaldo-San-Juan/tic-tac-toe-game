@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { GamepadComponent } from "./components/gamepad/gamepad.component";
+import { ServerService } from './services/server.service';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,6 @@ import { GamepadComponent } from "./components/gamepad/gamepad.component";
 })
 export class AppComponent {
   title = 'TicTacToe_project';
+
+  serverService = inject(ServerService);
 }
